@@ -1,0 +1,29 @@
+#### showing off some server/browser communication, this time
+#### used for scrolling in sync across several browsers and devices
+
+author   : wth, Werner Thie
+last edit: wth, 01.05.2016
+
+run the server with
+
+python runqxcomscroll.py
+
+which starts the server and let it bind to all interfaces on port 7999
+
+Looking at the sole (single page webapp) page served on
+
+http://localhost:7999
+
+The run.tac file is provided as a configuration file for the twistd script
+allowing for clean server operation with process right schedding (demotion)
+logging and whatever the swerver admin's heart desires. For more knowledge
+than simple try outs pleas head over to 
+
+http://twistedmatrix.com
+
+A word to the additional package used in here, called nevow.
+
+I used my own version which is used in production, compared to the original
+it has some adaptions and also shortcomings which over the course of time 
+will be ironed out. The idea is to continue working on nevow as long as the
+two differ and bring them into sync.
